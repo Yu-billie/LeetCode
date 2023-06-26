@@ -1,7 +1,7 @@
 class Solution:
     def minPathSum(self, grid: List[List[int]]) -> int:
-        if not grid or not grid[0]:
-            return 0
+        # if not grid or not grid[0]:
+        #     return 0
  
         # matrix length
         m = len(grid)
@@ -22,7 +22,7 @@ class Solution:
 
         min_sum = dp[m-1][n-1]
 
-        # Backtrack to find the path
+        # Backtrack to find the path   <-  NOT NEEDED
         # path = [(m-1, n-1)]
         # i, j = m-1, n-1
 
@@ -38,7 +38,8 @@ class Solution:
         # path.reverse()
 
         # return min_sum, path 
+
         return min_sum
-        
+
 s = Solution()
 print(s.minPathSum([[1,2,3],[4,5,6]]))   
