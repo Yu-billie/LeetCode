@@ -1,4 +1,4 @@
-import math
+# import math  # factorial library is not imported 
 class Solution:
     def uniquePaths(self, m, n): 
         dp = [[0] * n for _ in range(m)]
