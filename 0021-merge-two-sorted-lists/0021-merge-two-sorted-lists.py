@@ -4,6 +4,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+from typing import Optional 
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> ListNode:
         if not list1:
